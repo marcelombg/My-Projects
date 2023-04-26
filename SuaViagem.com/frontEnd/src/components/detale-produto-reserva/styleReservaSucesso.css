@@ -1,0 +1,49 @@
+.reservaSucesso-container {
+    width: 100%;
+    display: flex;
+    
+    position: fixed;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    background-color: var(--searchBar-color);
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    z-index: 400;
+
+   
+}
+
+.reservaSucesso-card {
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--text-color-header-footer);
+}
+
+.reservaSucesso-title1 {
+    color: var(  --color-header-footer);
+    font-weight: 700;
+}
+
+.reservaSucesso-title2 {
+    margin-bottom: 1rem;
+}
+
+.reservaSucesso-btn {
+    width:  100%;
+    background: var( --color-header-footer);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: var( --text-color-header-footer);
+    cursor: pointer;
+}

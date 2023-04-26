@@ -1,0 +1,314 @@
+{
+  "acomodacao": [
+    {
+      "id": "1",
+      "image": [
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/431820542.jpg?k=5726858389a94388310de50bf3c1af8d73a02c6690dc1f01184097cdb1efab51&o=&hp=1",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+      ],
+      "imageClass": [
+        "detail-image",
+        "detail-image2",
+        "detail-image3",
+        "detail-image4",
+        "detail-image5 "
+      ],
+      "title": "Hostelaria SP Boutique",
+      "type": "Hostels",
+      "puntaje": 8,
+      "facilities": [
+        "Cozinha",
+        "Televisor",
+        "Ar condicionado",
+        "Piscina",
+        "pets"
+      ],
+      "location": "Buenos Aires, Cidade Autônoma de Buenos Aires",
+      "country": "Argentina",
+      "city": "Buenos Aires",
+      "mapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53615.66699284024!2d-96.79655671481304!3d32.87227009118753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f85c3952ac3%3A0x7d3547b9a792e7d4!2sWalmart%20Supercenter!5e0!3m2!1sen!2sbr!4v1678239148968!5m2!1sen!2sbr",
+      "distancia": "A 940 m do centro",
+      "mapLink": "https://www.booking.com/hotel/br/hostelaria-sp.en-gb.html?aid=393655&label=msn-NHCmPWc6m4avlvplRi*qFg-80539240583430%3Atikwd-16659121813%3Aloc-20%3Anes%3Amte%3Alp147459%3Adec%3Aqshostel&sid=ad76bc39f22f8bbe3bc4d513161e39ec&dest_id=-671824&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&nflt=sth%3D4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1677459493&srpvid=c08806d286a80177&type=total&ucfs=1&activeTab=main#map_opened-hotel_header",
+      "description": "A HostelariaSP foi idealizada especialmente para pessoas de bom gosto que visitam a cidade de São Paulo, a negócios ou a lazer, e buscam um ambiente reservado com Conforto, Segurança e Qualidade.",
+      "comment": "muito bom",
+      "verMais": "https://www.hilton.com/en/hotels/bnadudt-doubletree-nashville-downtown/?SEO_id=GMB-AMER-DH-BNADUDT&y_source=1_MTM3MjU2Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "alt": "hotelImage"
+    },
+    {
+      "id": "2",
+      "image": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/431820542.jpg?k=5726858389a94388310de50bf3c1af8d73a02c6690dc1f01184097cdb1efab51&o=&hp=1",
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+      ],
+      "imageClass": [
+        "detail-image",
+        "detail-image2",
+        "detail-image3",
+        "detail-image4",
+        "detail-image5 "
+      ],
+      "title": "São Paulo Hostel Club",
+      "type": "Hostels",
+      "puntaje": 3,
+      "facilities": [
+        "Cozinha",
+        "Televisor",
+        "Piscina"
+      ],
+      "location": "Sao Paulo, Cidade Autônoma de Sao Paulo",
+      "country": "Brazil",
+      "city": "Sao Paulo",
+      "mapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53615.66699284024!2d-96.79655671481304!3d32.87227009118753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f85c3952ac3%3A0x7d3547b9a792e7d4!2sWalmart%20Supercenter!5e0!3m2!1sen!2sbr!4v1678239148968!5m2!1sen!2sbr",
+      "distancia": "A 940 m do centro",
+      "mapLink": "https://www.booking.com/hotel/br/sao-paulo-hostel.en-gb.html?aid=393655&label=msn-NHCmPWc6m4avlvplRi*qFg-80539240583430%3Atikwd-16659121813%3Aloc-20%3Anes%3Amte%3Alp147459%3Adec%3Aqshostel&sid=ad76bc39f22f8bbe3bc4d513161e39ec&dest_id=-671824&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&nflt=sth%3D4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1677459493&srpvid=c08806d286a80177&type=total&ucfs=1&activeTab=main#map_opened-hotel_header",
+      "description": "Proporcionamos uma experiência de hospedagem econômica, aconchegante, confortável e divertida bem no coração da cidade. Estamos a poucos passos das principais linhas de metrô e ônibus, e contamos com um incrível bar a disposição de nossos hóspedes e visitantes!",
+      "comment": "muito bom",
+      "verMais": "https://www.hilton.com/en/hotels/bnadudt-doubletree-nashville-downtown/?SEO_id=GMB-AMER-DH-BNADUDT&y_source=1_MTM3MjU2Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "alt": "hotelImage"
+    },
+    {
+      "id": "3",
+      "image": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/431820542.jpg?k=5726858389a94388310de50bf3c1af8d73a02c6690dc1f01184097cdb1efab51&o=&hp=1",
+        "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+      ],
+      "imageClass": [
+        "detail-image",
+        "detail-image2",
+        "detail-image3",
+        "detail-image4",
+        "detail-image5 "
+      ],
+      "type": "Hotéis",
+      "title": "Rio De janeiro Hostel Club",
+      "puntaje": 8,
+      "facilities": [
+        "Cozinha",
+        "Televisor",
+        "Ar condicionado",
+        "Piscina"
+      ],
+      "location": "Paris, Cidade Autônoma de Paris",
+      "country": "Franca",
+      "city": "Paris",
+      "mapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53615.66699284024!2d-96.79655671481304!3d32.87227009118753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f85c3952ac3%3A0x7d3547b9a792e7d4!2sWalmart%20Supercenter!5e0!3m2!1sen!2sbr!4v1678239148968!5m2!1sen!2sbr",
+      "distancia": "A 940 m do centro",
+      "mapLink": "https://www.booking.com/hotel/us/rodeway-inn-international.en-gb.html?aid=390156&label=duc511jc-1FCAMo7AFCBmF1cm9yYUgzWANoIIgBAZgBCbgBF8gBDNgBAegBAfgBDYgCAagCA7gClYTwnwbAAgHSAiQwMGIwZDA3My1lOWMwLTRiZDEtODcwMC1mODEyZTg0ZjZlN2LYAgbgAgE&sid=ad76bc39f22f8bbe3bc4d513161e39ec#map_opened-hotel_address",
+      "description": "Rosen Inn, part of the Rosen Hotels & Resorts line of hotels, received a multi-million dollar renovation and now offers beautiful accommodations at a mid-price range. Our renovation helped us earn AAA’s 3 Diamond rating. View our photo gallery to see these recent upgrades. Our hotel’s 315 guestrooms are located in two buildings. One of the buildings towers nine stories high offering you a birds-eye view of nearby attractions, such as Universal Orlando Resort™.",
+      "comment": "muito bom",
+      "verMais": "https://www.hilton.com/en/hotels/bnadudt-doubletree-nashville-downtown/?SEO_id=GMB-AMER-DH-BNADUDT&y_source=1_MTM3MjU2Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "alt": "hotelImage"
+    },
+    {
+      "id": "4",
+      "image": [
+        "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/431820542.jpg?k=5726858389a94388310de50bf3c1af8d73a02c6690dc1f01184097cdb1efab51&o=&hp=1",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+      ],
+      "imageClass": [
+        "detail-image",
+        "detail-image2",
+        "detail-image3",
+        "detail-image4",
+        "detail-image5 "
+      ],
+      "title": "Best Western Orlando",
+      "type": "Hotéis",
+      "puntaje": 6,
+      "facilities": [
+        "Cozinha",
+        "Televisor"
+      ],
+      "location": "Madrid, Cidade Autônoma de Madrid",
+      "country": "Espanha",
+      "city": "Madrid",
+      "mapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53615.66699284024!2d-96.79655671481304!3d32.87227009118753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f85c3952ac3%3A0x7d3547b9a792e7d4!2sWalmart%20Supercenter!5e0!3m2!1sen!2sbr!4v1678239148968!5m2!1sen!2sbr",
+      "distancia": "A 940 m do centro",
+      "mapLink": "https://www.booking.com/hotel/us/orlando-gateway.en-gb.html?aid=390156&label=duc511jc-1FCAMo7AFCBmF1cm9yYUgzWANoIIgBAZgBCbgBF8gBDNgBAegBAfgBDYgCAagCA7gClYTwnwbAAgHSAiQwMGIwZDA3My1lOWMwLTRiZDEtODcwMC1mODEyZTg0ZjZlN2LYAgbgAgE&sid=ad76bc39f22f8bbe3bc4d513161e39ec#map_opened-hotel_header",
+      "description": "Nicknamed the City Beautiful, Orlando continues to be the tourist mecca of the US, drawing in crowds of people daily worldwide with its legendary theme parks. Where else can you meet Mickey Mouse, go back to the future, ride coasters made from LEGO®s and watch Shamu swim? But the magic doesn't stop there. For those looking for a more relaxing vacation, Orlando also is inundated with a thriving arts scene, championship golf courses, world-class shops and restaurants, and a vibrant nightlife to boot.",
+      "comment": "muito bom",
+      "verMais": "https://www.hilton.com/en/hotels/bnadudt-doubletree-nashville-downtown/?SEO_id=GMB-AMER-DH-BNADUDT&y_source=1_MTM3MjU2Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "alt": "hotelImage"
+    },
+    {
+      "id": "5",
+      "image": [
+        "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/431820542.jpg?k=5726858389a94388310de50bf3c1af8d73a02c6690dc1f01184097cdb1efab51&o=&hp=1",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+      ],
+      "imageClass": [
+        "detail-image",
+        "detail-image2",
+        "detail-image3",
+        "detail-image4",
+        "detail-image5 "
+      ],
+      "title": "Platform at Grant Park",
+      "type": "Apartamentos",
+      "puntaje": 3,
+      "facilities": [
+        "Cozinha",
+        "Televisor",
+        "Ar condicionado",
+        "Piscina",
+        "pets"
+      ],
+      "location": "Dallas, Cidade Autônoma de Dallas",
+      "country": "EUA",
+      "city": "Dallas",
+      "mapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53615.66699284024!2d-96.79655671481304!3d32.87227009118753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f85c3952ac3%3A0x7d3547b9a792e7d4!2sWalmart%20Supercenter!5e0!3m2!1sen!2sbr!4v1678239148968!5m2!1sen!2sbr",
+      "distancia": "A 940 m do centro",
+      "mapLink": "https://www.booking.com/hotel/us/rodeway-inn-international.en-gb.html?aid=390156&label=duc511jc-1FCAMo7AFCBmF1cm9yYUgzWANoIIgBAZgBCbgBF8gBDNgBAegBAfgBDYgCAagCA7gClYTwnwbAAgHSAiQwMGIwZDA3My1lOWMwLTRiZDEtODcwMC1mODEyZTg0ZjZlN2LYAgbgAgE&sid=ad76bc39f22f8bbe3bc4d513161e39ec#map_opened-hotel_address",
+      "description": "Reap the full perks of urban living at  Link Apartments® Grant Park. Nestled in a vibrant and artsy neighborhood, our homes offer style, entertainment, and upscale comfort all in one. Call today and book a tour of our Grant Park apartments or townhomes to enjoy an amenity-rich hideaway, with every indulgence at your fingertips!",
+      "comment": "muito bom",
+      "verMais": "https://www.hilton.com/en/hotels/bnadudt-doubletree-nashville-downtown/?SEO_id=GMB-AMER-DH-BNADUDT&y_source=1_MTM3MjU2Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "alt": "hotelImage"
+    },
+    {
+      "id": "6",
+      "image": ["https://cf.bstatic.com/xdata/images/hotel/max1280x900/431820542.jpg?k=5726858389a94388310de50bf3c1af8d73a02c6690dc1f01184097cdb1efab51&o=&hp=1", "https://rb.gy/dgidkn", "https://cutt.ly/d8GlKzy", "https://cutt.ly/X8GlXF0", "https://cutt.ly/Z8GlNtl"],
+      "imageClass": ["detail-image", "detail-image2", "detail-image3", "detail-image4", "detail-image5 "],
+      "title": "Platform at Grant Park",
+      "type": "Cama e café da manhã",
+      "puntaje": 3,
+      "facilities": ["Cozinha", "Televisor", "Ar condicionado", "Piscina", "pets"],
+      "location": "Dallas, Cidade Autônoma de Dallas",
+      "country": "EUA",
+      "city": "Dallas",
+      "mapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53615.66699284024!2d-96.79655671481304!3d32.87227009118753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f85c3952ac3%3A0x7d3547b9a792e7d4!2sWalmart%20Supercenter!5e0!3m2!1sen!2sbr!4v1678239148968!5m2!1sen!2sbr",
+      "distancia": "A 940 m do centro",
+      "mapLink": "https://www.booking.com/hotel/us/rodeway-inn-international.en-gb.html?aid=390156&label=duc511jc-1FCAMo7AFCBmF1cm9yYUgzWANoIIgBAZgBCbgBF8gBDNgBAegBAfgBDYgCAagCA7gClYTwnwbAAgHSAiQwMGIwZDA3My1lOWMwLTRiZDEtODcwMC1mODEyZTg0ZjZlN2LYAgbgAgE&sid=ad76bc39f22f8bbe3bc4d513161e39ec#map_opened-hotel_address",
+      "description": "Reap the full perks of urban living at  Link Apartments® Grant Park. Nestled in a vibrant and artsy neighborhood, our homes offer style, entertainment, and upscale comfort all in one. Call today and book a tour of our Grant Park apartments or townhomes to enjoy an amenity-rich hideaway, with every indulgence at your fingertips!",
+      "comment": "muito bom",
+      "verMais": "https://www.hilton.com/en/hotels/bnadudt-doubletree-nashville-downtown/?SEO_id=GMB-AMER-DH-BNADUDT&y_source=1_MTM3MjU2Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "alt": "hotelImage"
+    },
+    {
+      "id": "6",
+      "image": ["https://cf.bstatic.com/xdata/images/hotel/max1280x900/431820542.jpg?k=5726858389a94388310de50bf3c1af8d73a02c6690dc1f01184097cdb1efab51&o=&hp=1", "https://rb.gy/dgidkn", "https://cutt.ly/d8GlKzy", "https://cutt.ly/X8GlXF0", "https://cutt.ly/Z8GlNtl"],
+      "imageClass": ["detail-image", "detail-image2", "detail-image3", "detail-image4", "detail-image5 "],
+      "title": "Platform at Grant Park",
+      "type": "Cama e café da manhã",
+      "puntaje": 3,
+      "facilities": ["Cozinha", "Televisor", "Ar condicionado", "Piscina", "pets"],
+      "location": "Dallas, Cidade Autônoma de Dallas",
+      "country": "EUA",
+      "city": "Dallas",
+      "mapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53615.66699284024!2d-96.79655671481304!3d32.87227009118753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f85c3952ac3%3A0x7d3547b9a792e7d4!2sWalmart%20Supercenter!5e0!3m2!1sen!2sbr!4v1678239148968!5m2!1sen!2sbr",
+      "distancia": "A 940 m do centro",
+      "mapLink": "https://www.booking.com/hotel/us/rodeway-inn-international.en-gb.html?aid=390156&label=duc511jc-1FCAMo7AFCBmF1cm9yYUgzWANoIIgBAZgBCbgBF8gBDNgBAegBAfgBDYgCAagCA7gClYTwnwbAAgHSAiQwMGIwZDA3My1lOWMwLTRiZDEtODcwMC1mODEyZTg0ZjZlN2LYAgbgAgE&sid=ad76bc39f22f8bbe3bc4d513161e39ec#map_opened-hotel_address",
+      "description": "Reap the full perks of urban living at  Link Apartments® Grant Park. Nestled in a vibrant and artsy neighborhood, our homes offer style, entertainment, and upscale comfort all in one. Call today and book a tour of our Grant Park apartments or townhomes to enjoy an amenity-rich hideaway, with every indulgence at your fingertips!",
+      "comment": "muito bom",
+      "verMais": "https://www.hilton.com/en/hotels/bnadudt-doubletree-nashville-downtown/?SEO_id=GMB-AMER-DH-BNADUDT&y_source=1_MTM3MjU2Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "alt": "hotelImage"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.corinthia.com%2Fmedia%2F1563%2Fcorinthia-lisbon-deluxe-king-bedroom.jpg&f=1&nofb=1&ipt=0d0842f3e887b1bfd8a82d2ebc3633acac094bad75534497c67288734289559a&ipo=images",
+      "name": "Hotéis",
+      "totals": "807.105 hotéis",
+      "alt": "hotelImage"
+    },
+    {
+      "id": "2",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fboulder.a-lodge.com%2Fwp-content%2Fuploads%2FLodging_Youth_Hostile_Gallery_2_Desktop.jpg&f=1&nofb=1&ipt=50b0408c85160c742cda249210126f47b2bc47138b404be23f7bca932e21f8bc&ipo=images",
+      "name": "Hostels",
+      "totals": "807.105 hotéis",
+      "alt": "hotelImage"
+    },
+    {
+      "id": "3",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa3%2F90%2F88%2Fa390889080eb260884a70183ebae8a8f.jpg&f=1&nofb=1&ipt=30539561fb86c87a3f3c97f5e3939d0f822b17df0cdb2e1c70ee704818e683d6&ipo=images",
+      "name": "Apartamentos",
+      "totals": "807.105 hotéis",
+      "alt": "hotelImage"
+    },
+    {
+      "id": "4",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2016%2F01%2F23%2F23%2F55%2Fbreakfast-in-bed-1158270_960_720.jpg&f=1&nofb=1&ipt=3be7be28c18d310a5bb9d616fa9b48ac157c024e8754ccb60f3a79e1a009e62a&ipo=images",
+      "name": "Cama e café da manhã",
+      "totals": "807.105 hotéis",
+      "alt": "hotelImage"
+    }
+  ],
+  "criarConta": [
+    {
+      "nome": "atef",
+      "sobreNome": "dev",
+      "email": "dev@gmail.com",
+      "senha": "1234567",
+      "userRoles": "ROLE_ADMIN",
+      "confirmSenha": "1234567",
+      "id": 1
+    },
+    {
+      "nome": "josef",
+      "sobreNome": "josef",
+      "email": "jo@gmail.com",
+      "senha": "1234567",
+      "confirmSenha": "1234567",
+      "userRoles": "ROLE_ADMIN",
+      "id": 2
+    },
+    {
+      "nome": "atef",
+      "sobreNome": "josef",
+      "email": "sosjosef@gmail.com",
+      "senha": "1234567",
+      "confirmSenha": "1234567",
+      "userRoles": "ROLE_ADMIN",
+      "id": 3
+    },
+    {
+      "nome": "atef",
+      "sobreNome": "chelaghma",
+      "email": "sosjosef@gmail.com",
+      "senha": "1234567",
+      "confirmSenha": "1234567",
+      "userRoles": "ROLE_ADMIN",
+      "id": 4
+    },
+    {
+      "nome": "atef",
+      "sobreNome": "josef",
+      "email": "sosjosef@gmail.com",
+      "senha": "1234567",
+      "confirmSenha": "1234567",
+      "userRoles": "ROLE_ADMIN",
+      "id": 5
+    },
+    {
+      "nome": "atef",
+      "sobreNome": "josef",
+      "email": "sosjosef@gmail.com",
+      "senha": "1234567",
+      "confirmSenha": "1234567",
+      "userRoles": "ROLE_ADMIN",
+      "id": 6
+    },
+    {
+      "sobreNome": "maria",
+      "senha": "1234567",
+      "email": "atef.chela@gmail.com",
+      "userRoles": "ROLE_ADMIN",
+      "id": 7
+    }
+  ]
+}

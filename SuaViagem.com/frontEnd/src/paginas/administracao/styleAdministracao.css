@@ -1,0 +1,109 @@
+.criar-produto {
+    padding: 2rem 4rem;
+   
+}
+
+.criar-produto h1 {
+    margin-bottom: 2rem;
+    
+}
+.form-container {
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.139);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.nome-produto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'nome categoria'
+               'cidade descricao';
+    gap: 1.5rem;
+}
+.direcao {
+    width: 100%;
+    border: none;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.139);
+    border-radius: 5px;
+}
+
+.nome-do-produto {
+    grid-area: nome;
+}
+
+.categoria {
+    grid-area: categoria;
+}
+.cidade {
+    grid-area: cidade;
+}
+.descrição {
+    grid-area: descricao;
+}
+
+/* .adicionar-atributos {
+    display: flex;
+
+    
+} */
+
+.adicionar-atributos-container {
+    margin-block: 2rem;
+}
+
+.adm-btn {
+    background-color: var(--color-header-footer);
+    width: 300px;
+    padding-block: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color-header-footer);
+    font-weight: 700;
+    margin-block: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.direcao {
+    padding-inline-start: 10px;
+}
+
+label {
+    font-weight: 700;
+    width: 100%;
+}
+
+select {
+    background-color: transparent;
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+}
+
+
+.image-btn {
+    width: 50px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--color-header-footer);
+    color: var(--text-color-header-footer);
+    cursor: pointer;
+}
+
+.first-division {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 0.5rem 0;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px){ 
+    .nome-produto-container{
+        display: flex;
+        flex-direction: column;
+    }
+.criar-produto {
+    padding-inline: 1rem;
+}
+  }

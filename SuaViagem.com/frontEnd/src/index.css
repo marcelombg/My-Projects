@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root {
+  --color-header-footer: #0F5EA2;
+  --color-button: #52BEE0;
+  --text-color-header-footer: #EEF1F2;
+  --searchBar-color: #082442;
+
+  
+  --DB-COLOR-PRINCIPAL: #1DBEB4;
+  --DB-COLOR-2: #383B58;
+  --DB-COLOR-3 : #545776;
+  --DB-COLOR-4 : #F3F1ED;
+   --white-color : #ffffff;
+   --recommendation-background: #eae9ee;
+   --error: #FF0000;
+   --heading1 : 24px;
+   --heading2 : 20px;
+   --heading3 : 16px;
+   --heading4 : 14px;
+   --botton1 : 14px;
+   --text1 : 14px;
+   --text2 : 12px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html , body{
+  margin: 0;
+  /* font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

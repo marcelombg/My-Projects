@@ -1,0 +1,201 @@
+{
+	"id": "2ed9111c-d743-4651-b825-7acd2051c79a",
+	"name": "Grupo_10_SuaViagem",
+	"timestamp": "2023-03-15T17:55:43.276Z",
+	"collection_id": "21777411-85997cd0-3330-4d70-826a-10fca18b4073",
+	"folder_id": "21777411-d0822a1a-9b89-484f-bf2d-a0a714a62bba",
+	"environment_id": "0",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-15T17:55:42.481Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e51ad694-e544-4438-866e-08917cd14829",
+			"name": "register",
+			"url": "http://localhost:8081/category/register",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true,
+				"A resposta deve ser válida e ter um body": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"A resposta deve ser válida e ter um body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Status 200": true,
+					"A resposta deve ser válida e ter um body": true
+				}
+			]
+		},
+		{
+			"id": "a73672a5-3efc-4ae5-8581-5a98fa71626d",
+			"name": "findAll",
+			"url": "http://localhost:8081/category/findAll",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true,
+				"A resposta deve ser válida e ter um body": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"A resposta deve ser válida e ter um body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				38
+			],
+			"allTests": [
+				{
+					"Status 200": true,
+					"A resposta deve ser válida e ter um body": true
+				}
+			]
+		},
+		{
+			"id": "ece3f041-ba04-4518-af99-5948de72f4f3",
+			"name": "findById",
+			"url": "http://localhost:8081/category/4",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true,
+				"A resposta deve ser válida e ter um body": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"A resposta deve ser válida e ter um body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status 200": true,
+					"A resposta deve ser válida e ter um body": true
+				}
+			]
+		},
+		{
+			"id": "21cee509-2122-48cf-b289-83ff5e7deb9a",
+			"name": "edit",
+			"url": "http://localhost:8081/category/4",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true,
+				"A resposta deve ser válida e ter um body": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"A resposta deve ser válida e ter um body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status 200": true,
+					"A resposta deve ser válida e ter um body": true
+				}
+			]
+		},
+		{
+			"id": "dfb14ab1-3a88-43f8-a68c-dbd72da41d62",
+			"name": "delete",
+			"url": "http://localhost:8081/category/8",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 93,
+	"collection": {
+		"requests": [
+			{
+				"id": "e51ad694-e544-4438-866e-08917cd14829",
+				"method": "POST"
+			},
+			{
+				"id": "a73672a5-3efc-4ae5-8581-5a98fa71626d",
+				"method": "GET"
+			},
+			{
+				"id": "ece3f041-ba04-4518-af99-5948de72f4f3",
+				"method": "GET"
+			},
+			{
+				"id": "21cee509-2122-48cf-b289-83ff5e7deb9a",
+				"method": "PUT"
+			},
+			{
+				"id": "dfb14ab1-3a88-43f8-a68c-dbd72da41d62",
+				"method": "DELETE"
+			}
+		]
+	}
+}
