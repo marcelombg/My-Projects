@@ -1,0 +1,27 @@
+{
+  "name": "desafio_02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "knex": "ts-node -r tsconfig-paths/register knexfile.ts",
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "env": "^0.0.2",
+    "fastify": "^4.23.2",
+    "knex": "^2.5.1",
+    "sqlite3": "^5.1.6",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2"
+  }
+}
