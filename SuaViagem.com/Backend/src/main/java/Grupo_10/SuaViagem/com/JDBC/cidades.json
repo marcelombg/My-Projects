@@ -1,0 +1,26 @@
+[
+	{
+		"id_cidades": "882",
+		"nome": "Brasília",
+		"sigla": "DF",
+		"pais": "Brasil"
+	},
+	{
+		"id_cidades": "1630",
+		"nome": "Belo Horizonte",
+		"sigla": "MG",
+		"pais": "Brasil"
+	},
+	{
+		"id_cidades": "3658",
+		"nome": "Rio de Janeiro",
+		"sigla": "RJ",
+		"pais": "Brasil"
+	},
+	{
+		"id_cidades": "5270",
+		"nome": "São Paulo",
+		"sigla": "SP",
+		"pais": "Brasil"
+	}
+]

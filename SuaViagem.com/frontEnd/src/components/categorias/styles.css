@@ -1,0 +1,38 @@
+.container-categoria {
+    margin-block-end: 1rem;
+    padding-inline: 4rem;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #383B58;
+}
+
+@media screen and (max-width: 992px) {
+   
+   .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+}
+
+@media screen and (max-width: 600px) {
+    .container-categoria {
+        padding-inline: 1rem;
+    }
+    .cards-wrapper {
+     grid-template-columns: 1fr;
+    }
+    .container {
+        padding-inline: 1rem;
+    }
+ }
+
+

@@ -1,0 +1,48 @@
+.suggestBox {
+    display:flex;
+    border-bottom: 1px solid #1dbeb4;
+    justify-content: flex-start;
+    align-items: center;
+    height: 59px;
+    width: 100%;
+    gap: 20.97px;
+   
+        
+}
+
+.suggestBox:hover {
+    background-color: rgba(29,190,180,0.25);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.suggestBox-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.suggestBox-content-city {
+    /* font-family:"Roboto"; */
+    font-size: 14px;
+    font-style: bold;
+    font-weight: 700;
+    color: #000000;
+    line-height:5px;
+    line-height:100%;
+    text-align: left;
+    vertical-align: top;
+    margin-bottom: 0px;
+}
+
+.suggestBox-content-country {
+    /* font-family:"Roboto"; */
+    font-size: 14px;
+    font-style: bold;
+    color: #545776;
+    line-height:16px;
+    line-height:100%;
+    text-align: left;
+    vertical-align: top;
+    margin-bottom: 0px;
+}

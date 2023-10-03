@@ -1,0 +1,1399 @@
+{
+	"info": {
+		"_postman_id": "92060f3c-74d5-44d1-80cc-55460ab96b1b",
+		"name": "Grupo_10_SuaViagem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21685681"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Junior\",\n    \"sobrenome\": \"Souza\",\n    \"email\": \"js@example.com\",\n    \"senha\": \"1234567\",\n    \"userRoles\": \"ROLE_USER\",\n    \"funcoesEntity\": {\n        \"id_funcoes\": 2\n    }\n}"
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/user",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticate",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"pm.globals.set(\"jwt\", jsonData.jwt);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"marcelo_mbg@hotmail.com\",\n    \"senha\": \"1234567\"\n}"
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/user/authenticate",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"user",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserByToken",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"pm.globals.set(\"jwt\", jsonData.jwt);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/user/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJjZWxvX21iZ0Bob3RtYWlsLmNvbSIsImV4cCI6MTY4MDQwMzM2NSwiaWF0IjoxNjgwMzAzMzY1fQ.HSKyZDQ2lWMCriMSjaeRUyh15B4BvB1Diam2CbVepH8",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"user",
+								"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJjZWxvX21iZ0Bob3RtYWlsLmNvbSIsImV4cCI6MTY4MDQwMzM2NSwiaWF0IjoxNjgwMzAzMzY1fQ.HSKyZDQ2lWMCriMSjaeRUyh15B4BvB1Diam2CbVepH8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_categorias\": 1,\r\n    \"descricao\": \"Hotéis\",\r\n    \"url_imagem\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.corinthia.com%2Fmedia%2F1563%2Fcorinthia-lisbon-deluxe-king-bedroom.jpg&f=1&nofb=1&ipt=0d0842f3e887b1bfd8a82d2ebc3633acac094bad75534497c67288734289559a&ipo=images\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/category/register",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"category",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/category/findAll",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"category",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/category/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id_categorias\": 1,\r\n        \"descricao\": \"Hotel\",\r\n        \"url_imagem\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.corinthia.com%2Fmedia%2F1563%2Fcorinthia-lisbon-deluxe-king-bedroom.jpg&f=1&nofb=1&ipt=0d0842f3e887b1bfd8a82d2ebc3633acac094bad75534497c67288734289559a&ipo=images\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/category/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{SuaViagemAWS}}/category/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Caracteristicas",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Pets\"\n}"
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/caracteristicas/register",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"caracteristicas",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/caracteristicas/findAll",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"caracteristicas",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/caracteristicas/4",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"caracteristicas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_categorias\": 1,\r\n\t\"qualificacao\": \"5 estrelas\",\r\n    \"descricao\": \"Hotel\",\r\n    \"url_imagem\": \"https://pt.wikipedia.org/wiki/Hotel#/media/Ficheiro:Ponta_Negra_Beach_Hotel.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/caracteristicas/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"caracteristicas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{SuaViagemAWS}}/caracteristicas/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"caracteristicas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Imagens",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\": \"https://cutt.ly/Z8GlNtl\"\r\n}"
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/imagens/register",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"imagens",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/imagens/findAll",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"imagens",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/imagens/14",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"imagens",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_imagens\": 7,\r\n    \"titulo\": \"Hostels\",\r\n    \"url\": \"https://cf.bstatic.com/xdata/images/hotel/max1280x900/431820542.jpg?k=5726858389a94388310de50bf3c1af8d73a02c6690dc1f01184097cdb1efab51&o=&hp=1\",\r\n    \"produtosEntity\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/imagens/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"imagens",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{SuaViagemAWS}}/imagens/2",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"imagens",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cities",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"id_cidades\": \"5270\",\r\n\t\t\"nome\": \"São Paulo\",\r\n\t\t\"sigla\": \"SP\",\r\n\t\t\"pais\": \"Brasil\"\r\n\t}"
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/cities/register",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"cities",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/cities/findAll",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"cities",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/cities/5270",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"cities",
+								"5270"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome\": \"Teste alterar cidade 1\",\r\n        \"pais\": \"Teste alterar pais  1\",\r\n        \"sigla\": \"Teste alterar sigla  1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/cities/5564",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"cities",
+								"5564"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{SuaViagemAWS}}/cities/5565",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"cities",
+								"5565"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Funcoes",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Usuário Comum\"    \r\n}"
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/funcoes/register",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"funcoes",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/funcoes/findAll",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"funcoes",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/funcoes/2",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"funcoes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome\": \"Teste alterar cidade 1\",\r\n        \"pais\": \"Teste alterar pais  1\",\r\n        \"sigla\": \"Teste alterar sigla  1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/cities/5564",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"cities",
+								"5564"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{SuaViagemAWS}}/funcoes/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"funcoes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservas",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"horaInicial\": \"13:00:00\",\r\n    \"dataInicial\": \"2025-12-27\",\r\n    \"dataFinal\": \"2025-12-30\",\r\n    \"idUser\": 1,\r\n    \"produtosEntity\": {\r\n        \"id_produtos\": 2\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/reservas/register",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"reservas",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/reservas/findAll",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"reservas",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"horaInicial\": \"08:30:00\",\r\n    \"dataInicial\": \"2023-03-31T00:00:00.000-03:00\",\r\n    \"dataFinal\": \"2023-04-04T00:00:00.000-03:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/reservas/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"reservas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByIdUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"horaInicial\": \"08:30:00\",\r\n    \"dataInicial\": \"2023-03-31T00:00:00.000-03:00\",\r\n    \"dataFinal\": \"2023-04-04T00:00:00.000-03:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/reservas/findByIdUser/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"reservas",
+								"findByIdUser",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id_reservas\": 1,\r\n        \"horaInicial\": \"08:00:00\",\r\n        \"dataInicial\": \"2023-03-30T00:00:00.000-03:00\",\r\n        \"dataFinal\": \"2023-03-31T00:00:00.000-03:00\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/reservas/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"reservas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{SuaViagemAWS}}/reservas/10",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"reservas",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"a\",\n    \"descricao\": \"a\",\n    \"pontuacao\": \"1\",\n    \"facilidades\": \"teste\",\n    \"localMapa\": \"a\",\n    \"distancia\": \"a\",\n    \"linkMapa\": \"teste\",\n    \"comentarios\": \"a\",\n    \"verMais\": \"teste\",\n    \"caracteristicasEntityList\": [\n        {\n            \"nome\": \"a\"\n        }\n    ],\n    \"imagensEntityList\": [\n        {\n            \"url\": \"a\"\n        }\n    ],\n    \"categoriasEntity\": {\n        \"id_categorias\": 1,\n        \"descricao\": \"Hotéis\",\n        \"url_imagem\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.corinthia.com%2Fmedia%2F1563%2Fcorinthia-lisbon-deluxe-king-bedroom.jpg&f=1&nofb=1&ipt=0d0842f3e887b1bfd8a82d2ebc3633acac094bad75534497c67288734289559a&ipo=images\",\n        \"produtosEntityList\": []\n    },\n    \"cidadesEntity\": {\n        \"id_cidades\": 5270,\n        \"nome\": \"São Paulo\",\n        \"pais\": \"Brasil\",\n        \"sigla\": \"SP\",\n        \"produtosEntityList\": []\n    },\n    \"reservasEntity\": [],\n    \"politicasCancelamento\": \"a\",\n    \"saudeSegurança\": \"a\",\n    \"normasCasa\": \"a\"\n}"
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/product/register",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"product",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/product/findAll",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"product",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/product/3",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"product",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCategory",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/product/findByCategory/Hostels",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"product",
+								"findByCategory",
+								"Hostels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCidades",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/product/findByCidades/São Paulo",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"product",
+								"findByCidades",
+								"São Paulo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCidadeAndDatas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/product/findByCidadeAndDatas?cidade=São Paulo&dataInicial=2023-05-05&dataFinal=2023-05-07",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"product",
+								"findByCidadeAndDatas"
+							],
+							"query": [
+								{
+									"key": "cidade",
+									"value": "São Paulo"
+								},
+								{
+									"key": "dataInicial",
+									"value": "2023-05-05"
+								},
+								{
+									"key": "dataFinal",
+									"value": "2023-05-07"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_produtos\": 1,\r\n    \"nome\": \"Hostelaria SP Boutique\",\r\n    \"descricao\": \"A HostelariaSP foi idealizada especialmente para pessoas de bom gosto que visitam a cidade de São Paulo, a negócios ou a lazer, e buscam um ambiente reservado com Conforto, Segurança e Qualidade.\",\r\n    \"pontuacao\": \"8\",\r\n    \"facilidades\": \"Cozinha, Televisor, Ar condicionado, Piscina, pets\",\r\n    \"localMapa\": \"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53615.66699284024!2d-96.79655671481304!3d32.87227009118753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f85c3952ac3%3A0x7d3547b9a792e7d4!2sWalmart%20Supercenter!5e0!3m2!1sen!2sbr!4v1678239148968!5m2!1sen!2sbr\",\r\n    \"distancia\": \"a 940 m do centro\",\r\n    \"linkMapa\": \"https://www.booking.com/hotel/br/hostelaria-sp.en-gb.html?aid=393655&label=msn-NHCmPWc6m4avlvplRi*qFg-80539240583430%3Atikwd-16659121813%3Aloc-20%3Anes%3Amte%3Alp147459%3Adec%3Aqshostel&sid=ad76bc39f22f8bbe3bc4d513161e39ec&dest_id=-671824&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&nflt=sth%3D4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1677459493&srpvid=c08806d286a80177&type=total&ucfs=1&activeTab=main#map_opened-hotel_header\",\r\n    \"comentarios\": \"muito bom\",\r\n    \"verMais\": \"https://www.hilton.com/en/hotels/bnadudt-doubletree-nashville-downtown/?SEO_id=GMB-AMER-DH-BNADUDT&y_source=1_MTM3MjU2Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D\",\r\n    \"caracteristicasEntityList\": [\r\n        {\r\n            \"id_caracteristicas\": 1,\r\n            \"nome\": \"Cozinha\",\r\n            \"icone\": \"Cozinha\"\r\n        },\r\n        {\r\n            \"id_caracteristicas\": 2,\r\n            \"nome\": \"Televisor\",\r\n            \"icone\": \"Televisor\"\r\n        },\r\n        {\r\n            \"id_caracteristicas\": 4,\r\n            \"nome\": \"Ar condicionado\",\r\n            \"icone\": \"Ar condicionado\"\r\n        }\r\n    ],\r\n    \"imagensEntityList\": [\r\n        {\r\n        \"id_imagens\": 48,\r\n        \"titulo\": \"Hostels\",\r\n        \"url\": \"https://cf.bstatic.com/xdata/images/hotel/max1280x900/431820542.jpg?k=5726858389a94388310de50bf3c1af8d73a02c6690dc1f01184097cdb1efab51&o=&hp=1\"\r\n    },\r\n    {\r\n        \"id_imagens\": 49,\r\n        \"titulo\": \"Hostels\",\r\n        \"url\": \"https://rb.gy/dgidkn\"\r\n    },\r\n    {\r\n        \"id_imagens\": 50,\r\n        \"titulo\": \"Hostels\",\r\n        \"url\": \"https://cutt.ly/d8GlKzy\"\r\n    },\r\n    {\r\n        \"id_imagens\": 51,\r\n        \"titulo\": \"Hostels\",\r\n        \"url\": \"https://cutt.ly/X8GlXF0\"\r\n    },\r\n    {\r\n        \"id_imagens\": 52,\r\n        \"titulo\": \"Hostels\",\r\n        \"url\": \"https://cutt.ly/Z8GlNtl\"\r\n    }\r\n    ],\r\n    \"categoriasEntity\": {\r\n        \"id_categorias\": 2,\r\n        \"descricao\": \"Hostels\",\r\n        \"url_imagem\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fboulder.a-lodge.com%2Fwp-content%2Fuploads%2FLodging_Youth_Hostile_Gallery_2_Desktop.jpg&f=1&nofb=1&ipt=50b0408c85160c742cda249210126f47b2bc47138b404be23f7bca932e21f8bc&ipo=images\",\r\n        \"produtosEntityList\": []\r\n    },\r\n    \"cidadesEntity\": {\r\n        \"id_cidades\": 5270,\r\n        \"nome\": \"São Paulo\",\r\n        \"pais\": \"Brasil\",\r\n        \"sigla\": \"SP\",\r\n        \"produtosEntityList\": []\r\n    },\r\n    \"reservasEntity\": [\r\n        {\r\n            \"id_reservas\": 23,\r\n            \"horaInicial\": \"08:00:00\",\r\n            \"dataInicial\": \"2023-04-01T00:00:00.000-03:00\",\r\n            \"dataFinal\": \"2023-04-05T00:00:00.000-03:00\"\r\n        },\r\n        {\r\n            \"id_reservas\": 26,\r\n            \"horaInicial\": \"14:00:00\",\r\n            \"dataInicial\": \"2023-04-20T00:00:00.000-03:00\",\r\n            \"dataFinal\": \"2023-04-21T00:00:00.000-03:00\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SuaViagemAWS}}/product/1",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{SuaViagemAWS}}/product/12",
+							"host": [
+								"{{SuaViagemAWS}}"
+							],
+							"path": [
+								"product",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUZXN0ZSIsImV4cCI6MTY2NDIzNDg1OCwiaWF0IjoxNjY0MjM0MjU4fQ.D-gmR-mJ07avRyrkH7Him9S9nn_asJA2OSrXIZa8L3k"
+		},
+		{
+			"key": "SuaViagem.com",
+			"value": "http://localhost:8081"
+		},
+		{
+			"key": "jwtToken",
+			"value": "jwtToken"
+		}
+	]
+}

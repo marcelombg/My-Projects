@@ -1,0 +1,136 @@
+.calendario-container {
+    background-color: var(  --text-color-header-footer);
+    padding-inline: 4rem;
+    padding-block-end: 2rem;
+
+}
+
+.calendario-wrapper {
+    display: grid;
+   grid-template-columns: 1fr auto;
+   grid-template-areas: 'calender card';
+   gap: 20px;
+   align-items: center;
+}
+
+.calendario-title {
+    color: var(--searchBar-colo);
+    padding-block: 1rem;
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+}
+
+ .double-calender {
+    display: block;
+  }
+
+.single-calender {
+    display: none;
+}
+
+.calendario {
+    width: 100%;
+    min-height: 300px;
+
+    grid-area: calender;
+}
+
+.react-calendar--doubleView {
+    width: 100% !important;
+    border-radius: 5px;
+    border: none !important;
+    font-size: 13px;
+font-weight: bold;
+/* font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif; */
+box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer {
+    margin-inline: 3em !important;
+    margin-block: 0.5em !important;
+}
+
+.react-calendar__navigation__arrow  {
+    background: var(--color-header-footer)  !important;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50% !important;
+    font-size: 20px !important;
+    color: white !important;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+    position: relative !important;
+    top: 130px !important;
+    padding-block-end: 0.5rem;
+}
+
+.calendario-card {
+    width: 100%;
+    background-color: white;
+    min-height: 90px;
+  
+    border-radius: 4px;
+    padding: 1rem;
+    grid-area: card;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.calendario-btn {
+    min-width: 100%;
+    border: none;
+    min-height: 40px;
+    border-radius: 4px;
+    background-color: var( --color-header-footer);
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .calendario-container {
+        padding-inline: 1rem;
+    }
+    .calendario-wrapper {
+     
+      grid-template-columns: 1fr;
+      grid-template-areas: 'calender'
+                            'card';
+  }
+
+  .react-calendar__viewContainer {
+    flex-direction: column !important;
+  }
+  .react-calendar__month-view {
+    width: 100% !important;
+  }
+
+  .react-calendar__navigation__arrow {
+    top: 250px !important;
+  }
+  .double-calender {
+    display: none;
+  }
+  .single-calender {
+    display: block;
+}
+.react-calendar__navigation__arrow{
+top: 10px !important
+}
+}
+  
+
+@media (min-width:600px) and (max-width:900px) {
+  .calendario-wrapper {
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-areas: 'calender'
+   "card";
+   gap: 20px;
+   align-items: center;
+}
+
+
+}

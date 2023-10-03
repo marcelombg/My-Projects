@@ -1,0 +1,87 @@
+.app-main {
+    grid-area: main;
+    overflow-y: auto;
+    overflow-x: hidden; 
+  }
+
+.history-reserva-container {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-reserva-title {
+  color: var(--text-color-header-footer);
+  font-size: 22px;
+}
+
+.history-reserva-fully-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5{
+  color: var(--color-header-footer);
+  font-weight: 600;
+}
+.searchBox-container{
+  background-color: var( --searchBar-color);
+  padding-block: 10px;
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.searchBox-title {
+  text-align: center;
+  color: var(--text-color-header-footer);
+  font-size: 22px;
+}
+
+.sem-reservas{
+    display: flex;
+    /* background-color: var(--color-header-footer); */
+    flex-direction: column;
+    align-items: center;
+    margin-block: 10rem;
+    padding: 1rem;
+    gap:0.5rem;
+    border:2px solid var(--color-header-footer);
+    border-radius: 10px;
+    border-right: 10px solid var(--color-header-footer);
+    border-bottom: 10px solid var(--color-header-footer);
+    
+
+    
+}
+
+.sem-reservas-link{
+  text-decoration: none;
+}
+
+.sem-reservas-icon{
+    margin-bottom:20px;
+    
+}
+@media only screen and (max-width: 600px) {
+  
+
+  .searchBox-container{
+    padding-inline: 1rem;
+  }
+    .searchBox-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .searchBox-btn{
+        width: 100%;
+    }
+
+    
+    .daterangepicker .drp-calendar.left  {
+      border: none;
+    }
+
+}

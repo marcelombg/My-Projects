@@ -1,0 +1,166 @@
+
+.app-main {
+    grid-area: main;
+    overflow-y: auto;
+    overflow-x: hidden; 
+  }
+
+
+.searchBox-container{
+  background-color: var( --searchBar-color);
+  padding-block: 10px;
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.searchBox-title {
+  text-align: center;
+  color: var(--text-color-header-footer);
+  font-size: 22px;
+}
+
+.location-input {
+  background: white;
+  border-radius: 5px;
+  width: 100%;
+}
+.date-input {
+  background: white;
+  border-radius: 5px;
+  width: 100%;
+}
+.searchBox-btn {
+  background-color: var(--color-header-footer);
+  color: var(--white-color);
+  font-weight: 700;
+  border: transparent;
+  width: 50%;
+  min-height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.searchBox-form {
+  display: flex;
+  gap: 10px
+}
+
+.searchSuggestBox-div{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position:relative;
+  gap:1px;
+
+}
+
+.suggestBox-input{
+
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  top:40px;
+  width: 100%;
+  height: 254px !important;
+  background-color:white;
+  border-radius: 2px 2px 5px 5px;
+  padding: 13px 12px 5px 14px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  list-style: none;
+  overflow: hidden;
+  -webkit-scrollbar-width: thin;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-header-footer) transparent;
+  
+}
+
+li:last-child > div{
+  border-bottom: none;
+}
+
+
+.applyBtn {
+  background-color: var(--color-header-footer);
+  width: 206px;
+  height: 40px;
+  border: none;
+}
+
+.drp-selected {
+  visibility: hidden;
+}
+
+.daterangepicker td.active {
+  background-color: var( --color-header-footer);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.daterangepicker td.in-range{
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.daterangepicker .drp-calendar.left  {
+  border-right: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.daterangepicker .drp-buttons {
+  border-top: transparent;
+}
+
+.date-range-picker{
+  width:1500px !important;
+}
+
+
+/* .daterangepicker{
+  display: none !important;
+} */
+.loading {
+  display: absolute;
+  z-index: 1000;
+  bottom: 100px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  animation: spin 1s ease-in-out infinite;
+  margin-left: 10px;
+}
+
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+
+  .searchBox-container{
+    padding-inline: 1rem;
+  }
+    .searchBox-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .searchBox-btn{
+        width: 100%;
+    }
+
+    .daterangepicker .drp-calendar.left  {
+      border: none;
+    }
+
+}
+

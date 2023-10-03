@@ -1,0 +1,89 @@
+.sliderContainer {
+    width: 100%;
+    background-color: var( --text-color-header-footer);
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    
+  }
+
+  .cardCarousel {
+    background-color: var(--searchBar-color);
+    width: 600px;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .carousel img {
+    height: 100%;
+    border-radius: 5px;
+  }
+  .carousel .thumb {
+    width: 150px !important;
+  }
+
+  .control-arrow {
+    /* background-color: orange !important; */
+  }
+
+  .carousel-status {
+    position: relative !important;
+    top: 200px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 20px !important;
+  }
+ p{
+  margin-bottom: 0 !important;
+ }
+  .dot {
+    display: none !important;
+  }
+
+  .close {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+
+  }
+
+  .hide {
+    display: none;
+  }
+
+
+  .thumb {
+    border: none !important;
+    height: 100px !important;
+  }
+
+  .carousel .slide img {
+    height: 300px !important;
+  }
+
+  ul {
+    margin-bottom: 0 !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .cardCarousel {
+      width: 100%;
+      padding: 5px;
+      z-index: 3000;
+      background-color: unset;
+    }
+    .close {
+      color: var(--searchBar-color);
+    }
+}
+  

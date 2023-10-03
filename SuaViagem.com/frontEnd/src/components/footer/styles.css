@@ -1,0 +1,29 @@
+.footer-social-icon {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.footer {
+    grid-area: footer;
+    background-color :  var(--color-header-footer);
+    padding-inline :  4rem;
+    display: flex;
+    align-items :  center;
+    font-weight: 700;
+    font-size: var(--text2);
+    height: 58px;
+    color: var(--text-color-header-footer);
+
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        padding-inline: 1rem;
+    }
+    .footer-social-icon {
+        display: none;
+    }
+  }
+  
